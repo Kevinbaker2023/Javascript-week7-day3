@@ -1,5 +1,5 @@
 const form1 = document.getElementsByTagName('form')[0]
-form1.addEventListener('submit', () => {
+form1.addEventListener('submit', (event) => {
     event.preventDefault()
     const poke_name = form1[0].value
     pokeData(poke_name)
